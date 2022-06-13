@@ -2,7 +2,7 @@ package com.arrays;
 
 public class RemoveDuplicateElementFromSortedArray {
     public static void main(String[] args) {
-        int[] arr = ArrayFunctions.arrayCreate();
+        int[] arr = ArrayFunctions.createArray();
         int neArraySize = removeDuplicates(arr,arr.length);
         for (int i = 0; i < neArraySize; i++) {
             System.out.print(arr[i] + " ");

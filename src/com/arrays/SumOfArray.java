@@ -2,7 +2,7 @@ package com.arrays;
 
 public class SumOfArray {
     public static void main(String[] args) {
-        int[] arr = ArrayFunctions.arrayCreate();
+        int[] arr = ArrayFunctions.createArray();
 //        ArrayCreation.printArray(arr);
         int size = arr.length;
         System.out.print("Sum of array ==> "+ sumOfArray(arr,size));

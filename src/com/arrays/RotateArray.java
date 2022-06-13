@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RotateArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] array = ArrayFunctions.arrayCreate();
+        int[] array = ArrayFunctions.createArray();
         int d = sc.nextInt();
         rotateArray(array, d);
     }

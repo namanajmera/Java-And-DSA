@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CountOfSmallerElements {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] arr = ArrayFunctions.arrayCreate();
+        int[] arr = ArrayFunctions.createArray();
         int x = scanner.nextInt();
         int count = countOfElement(arr,x);
         System.out.println("count ==> "+ count);

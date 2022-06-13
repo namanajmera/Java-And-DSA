@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CountPossibleTriangle {
     public static void main(String[] args) {
-        int[] arr = ArrayFunctions.arrayCreate();
+        int[] arr = ArrayFunctions.createArray();
         int countn3 = countTrianglesn3(arr);
         int countn2 = countTrianglesn2(arr);
         System.out.print("Count ==> "+ countn3);

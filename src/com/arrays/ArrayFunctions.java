@@ -3,7 +3,7 @@ package com.arrays;
 import java.util.Scanner;
 
 public class ArrayFunctions {
-    public static int[] arrayCreate(){
+    public static int[] createArray(){
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         int[] arr = new int[size];

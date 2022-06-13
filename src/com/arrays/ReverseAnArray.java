@@ -2,7 +2,7 @@ package com.arrays;
 
 public class ReverseAnArray {
     public static void main(String[] args) {
-        int[] arr = ArrayFunctions.arrayCreate();
+        int[] arr = ArrayFunctions.createArray();
         int size = arr.length;
         System.out.print("Before reverse => ");
         ArrayFunctions.printArray(arr);
