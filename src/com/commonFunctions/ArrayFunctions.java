@@ -1,4 +1,4 @@
-package com.arrays;
+package com.commonFunctions;
 
 import java.util.Scanner;
 
@@ -15,6 +15,13 @@ public class ArrayFunctions {
 
     public static void printArray(int[] arr){
         for (int j : arr) {
+            System.out.print(j + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printArray(long[] arr){
+        for (long j : arr) {
             System.out.print(j + " ");
         }
         System.out.println();

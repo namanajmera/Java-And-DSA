@@ -1,5 +1,7 @@
 package com.arrays;
 
+import com.commonFunctions.ArrayFunctions;
+
 public class KadensAlgorithmMaxSumSumArray {
     public static void main(String[] args) {
         int[] arr = ArrayFunctions.createArray();
