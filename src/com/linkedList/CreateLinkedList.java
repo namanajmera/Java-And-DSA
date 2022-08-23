@@ -4,12 +4,6 @@ import java.util.Scanner;
 
 public class CreateLinkedList {
     public static void main(String[] args) {
-//        Node<Integer> head = new Node<>(10);
-//        Node<Integer> n2 = new Node<>(20);
-//        Node<Integer> n3 = new Node<>(30);
-//        head.next = n2;
-//        n2.next = n3;
-//        PrintLinkedList.printLinkedList(head);
         Node<Integer> node = createLinkList();
         if (node != null) {
             System.out.println("From Scanner ==> ");
@@ -19,7 +13,7 @@ public class CreateLinkedList {
         }
     }
 
-    private static Node<Integer> createLinkList() {
+    public static Node<Integer> createLinkList() {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         if (num == -1){
