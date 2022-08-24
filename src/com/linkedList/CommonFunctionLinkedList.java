@@ -46,4 +46,24 @@ public class CommonFunctionLinkedList {
         return lengthLL;
     }
 
+    public static Node<Integer> deleteNode(Node<Integer> head, int nth){
+        if (head == null){
+            return null;
+        }
+        if (nth == 1){
+            Node<Integer> newHead = head.next;
+            return newHead;
+        }
+        Node<Integer> newHead = head;
+        int count = 1;
+        while (count < nth-1 && newHead.next!=null){
+            count++;
+            newHead = newHead.next;
+        }
+        if (newHead.next!=null){
+            newHead.next = newHead.next.next;
+        }
+        return head;
+    }
+
 }
