@@ -2,7 +2,7 @@ package com.linkedList;
 
 import java.util.Scanner;
 
-public class CreateLinkedList {
+public class CommonFunctionLinkedList {
     public static void main(String[] args) {
         Node<Integer> node = createLinkList();
         if (node != null) {
@@ -31,6 +31,19 @@ public class CreateLinkedList {
             }
         }
         return head;
+    }
+
+    public static int lengthOfLinkedList(Node<Integer> head){
+        int lengthLL = 0;
+        if (head == null){
+            return lengthLL;
+        }
+        Node currentNode = head;
+        while (currentNode!=null){
+            lengthLL++;
+            currentNode = currentNode.next;
+        }
+        return lengthLL;
     }
 
 }

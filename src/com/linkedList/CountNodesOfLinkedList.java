@@ -2,7 +2,7 @@ package com.linkedList;
 
 public class CountNodesOfLinkedList {
     public static void main(String[] args) {
-        Node<Integer> head = CreateLinkedList.createLinkList();
+        Node<Integer> head = CommonFunctionLinkedList.createLinkList();
         int length = getCount(head);
         System.out.println("Length of Linked List==> " + length);
     }

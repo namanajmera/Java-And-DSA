@@ -2,7 +2,7 @@ package com.linkedList;
 
 public class FindingMiddleElementLL {
     public static void main(String[] args) {
-        Node<Integer> head = CreateLinkedList.createLinkList();
+        Node<Integer> head = CommonFunctionLinkedList.createLinkList();
         int middleNodeValue = getMiddle(head);
         System.out.println("middleNodeValue ==> " + middleNodeValue);
     }

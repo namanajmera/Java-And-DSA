@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NodeAtGivenLinkedList {
     public static void main(String[] args) {
-        Node<Integer> head = CreateLinkedList.createLinkList();
+        Node<Integer> head = CommonFunctionLinkedList.createLinkList();
         Scanner sc = new Scanner(System.in);
         int index = sc.nextInt();
         int nodeValue = getNthValue(head,index);
