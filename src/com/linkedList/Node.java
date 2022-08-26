@@ -1,10 +1,11 @@
 package com.linkedList;
 
 public class Node<T> {
-    T data;
-    Node next;
+    public T data;
+    public Node next;
 
-    Node(T data){
+    public Node(T data){
         this.data = data;
+        this.next = null;
     }
 }
