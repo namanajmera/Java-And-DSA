@@ -2,8 +2,8 @@ package com.stacks;
 
 import com.linkedList.Node;
 
-public class StackUsingLinkedList {
-    Node<Integer> head;
+public class StackUsingLinkedList<T> {
+    Node<T> head;
     int size;
 
     StackUsingLinkedList(){
@@ -19,20 +19,27 @@ public class StackUsingLinkedList {
         return size == 0;
     }
 
-    public void push(int element){
-        Node<Integer> newNode = new Node<>(element);
+    public void push(T element){
+        Node<T> newNode = new Node<>(element);
         newNode.next = head;
         head = newNode;
         size++;
     }
 
-    public int pop(){
+    public T pop(){
         if (size == 0){
-            return -1;
+            return null;
         }
-        int value = head.data;
+        T value = head.data;
         head = head.next;
         size--;
         return value;
+    }
+
+    public T top(){
+        if (head == null){
+            return null;
+        }
+        return head.data;
     }
 }
