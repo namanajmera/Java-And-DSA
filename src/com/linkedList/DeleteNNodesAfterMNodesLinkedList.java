@@ -22,7 +22,7 @@ public class DeleteNNodesAfterMNodesLinkedList {
             if (index == m) {
                 int i = 0;
                 while (i != n) {
-                    int nth = index + 1 + i;
+                    int nth = index + i;
                     head = CommonFunctionLinkedList.deleteNode(head, nth);
                     i++;
                 }
