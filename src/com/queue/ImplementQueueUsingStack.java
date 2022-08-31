@@ -1,7 +1,6 @@
 package com.queue;
 
 import java.util.Stack;
-
 public class ImplementQueueUsingStack {
     public static void main(String[] args) {
         Queues q = new Queues();
