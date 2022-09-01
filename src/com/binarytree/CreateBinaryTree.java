@@ -9,7 +9,7 @@ public class CreateBinaryTree {
 
     }
 
-    private static BinaryTreeNode<Integer> createBinaryTree() {
+    public static BinaryTreeNode<Integer> createBinaryTree() {
         System.out.print("Enter data:- ");
         int data = sc.nextInt();
         if (data == -1)
