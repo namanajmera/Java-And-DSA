@@ -7,7 +7,7 @@ public class HeightOfBinaryTree {
         System.out.println("Height of Binary tree ==> " + height);
     }
 
-    private static int heightBinaryTree(BinaryTreeNode<Integer> binaryTreeNode) {
+    public static int heightBinaryTree(BinaryTreeNode<Integer> binaryTreeNode) {
         if (binaryTreeNode == null){
             return 0;
         }
