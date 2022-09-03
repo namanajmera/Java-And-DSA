@@ -35,6 +35,19 @@ public class StackUsingArray {
         return popElem;
     }
 
+    public int getMin(){
+        if (topIndex == -1){
+            return -1;
+        }
+        int min = Integer.MAX_VALUE;
+        for (int i =0;i<=topIndex;i++){
+            if (min > data[i]){
+                min = data[i];
+            }
+        }
+        return min;
+    }
+
     public void printStack(){
         if (topIndex == -1){
             System.out.println("Stack is empty");
@@ -43,6 +56,7 @@ public class StackUsingArray {
         for (int i = topIndex;i>=0;i--){
             System.out.print(data[i]+" ");
         }
+        System.out.println();
     }
 
 }
