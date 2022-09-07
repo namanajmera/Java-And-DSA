@@ -26,7 +26,7 @@ public class CheckTwoArraysEqualOrNot {
             if (hashMap2.containsKey(arr2[i])){
                 hashMap2.put(arr2[i],hashMap2.get(arr2[i])+1);
             }else{
-                hashMap2.put(arr2[i],1);
+                hashMap2.put(arr2[i],1L);
             }
         }
         return hashMap1.equals(hashMap2);
