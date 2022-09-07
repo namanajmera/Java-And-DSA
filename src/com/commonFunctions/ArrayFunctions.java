@@ -6,10 +6,23 @@ public class ArrayFunctions {
 
     static Scanner sc = new Scanner(System.in);
     public static int[] createArray(){
+        System.out.print("Enter the size ==> ");
         int size = sc.nextInt();
+        System.out.print("Enter array of "+size+" element ==> ");
         int[] arr = new int[size];
         for(int i = 0;i<arr.length;i++){
             arr[i] = sc.nextInt();
+        }
+        return arr;
+    }
+
+    public static long[] createArray1(){
+        System.out.print("Enter the size ==> ");
+        int size = sc.nextInt();
+        System.out.print("Enter array of "+size+" element ==> ");
+        long[] arr = new long[size];
+        for(int i = 0;i<arr.length;i++){
+            arr[i] = sc.nextLong();
         }
         return arr;
     }
