@@ -16,6 +16,18 @@ public class ArrayFunctions {
         return arr;
     }
 
+    public static char[] createCharArray(){
+        System.out.print("Enter the character without spaces==> ");
+        char[] arr = sc.next().toCharArray();
+        return arr;
+    }
+
+    public static void printCharArray(char[] arr){
+        for(int i = 0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+
     public static long[] createArray1(){
         System.out.print("Enter the size ==> ");
         int size = sc.nextInt();
